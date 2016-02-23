@@ -9,7 +9,13 @@
   <script src="node_modules/react-dom/dist/react-dom.min.js"></script>
   <script src="./dist/react-workshop-component.min.js"></script>
   <script>
-    // TODO: Render component
+    var data = {
+      title: 'Workshop Component',
+    }
+
+    var app = document.createElement('div');
+    window.document.body.appendChild(app);
+    ReactDOM.render(React.createElement(ReactWorkshopComponent.default, data), app);
   </script>
 </body>
 </html>

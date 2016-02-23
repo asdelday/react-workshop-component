@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
+import ReactWorkshopComponent from './ReactWorkshopComponent';
 
 (() => {
   const app = document.getElementById('react-view');
-  // TODO Render
-  render(<div>Hello World!</div>, app);
+  render(<ReactWorkshopComponent title="React Workshop" />, app);
 })();

@@ -152,6 +152,11 @@ if (TARGET === 'test' || TARGET === 'test:tdd') {
         { test: /\.jsx?$/, loaders: ['babel?cacheDirectory'], include: config.paths.src },
       ],
     },
+    externals: {
+      cheerio: 'window',
+      'react/lib/ExecutionEnvironment': true,
+      'react/lib/ReactContext': true,
+    },
   });
 }
 

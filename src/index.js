@@ -1,5 +1,8 @@
 /**
  * Component Library Output
  */
+import ReactWorkshopComponent from './ReactWorkshopComponent';
 
-// TODO
+export {
+  ReactWorkshopComponent as default,
+};
