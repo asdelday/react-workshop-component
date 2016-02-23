@@ -1,6 +1,7 @@
 import React, { PropTypes, Component } from 'react';
 import cx from 'classnames';
 import ItemList from '../ItemList';
+import './SearchComponent.scss';
 
 class SearchComponent extends Component {
   static propTypes = {
@@ -46,7 +47,10 @@ class SearchComponent extends Component {
 
     return (
       <div className={ cx(className, 'SearchComponent') }>
-        <input type="text" value={ searchValue} placeholder={ placeholder }
+        <input className="SearchComponent__input"
+               type="text"
+               value={ searchValue}
+               placeholder={ placeholder }
                onChange={ this.handleSearchInputChange }
         />
         <ItemList className="SearchComponent__itemList" list={ filteredItemList } />

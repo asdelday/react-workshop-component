@@ -1,5 +1,6 @@
 import React, { PropTypes, Component } from 'react';
 import cx from 'classnames';
+import './Item.scss';
 
 class Item extends Component {
   static propTypes = {
@@ -18,9 +19,11 @@ class Item extends Component {
 
     return (
       <div className={ cx(className, 'Item') }>
-        <div className="Item__value">{ value }</div>
-        <div className="Item__description">{ description }</div>
-        <div className="Item__image">{ image }</div>
+        <img src={ image } alt={ value } />
+        <div className="Item__info">
+          <div className="Item__value">{ value }</div>
+          <div className="Item__description">{ description }</div>
+        </div>
       </div>
     );
   }

@@ -2,6 +2,7 @@ import React, { PropTypes, Component } from 'react';
 import cx from 'classnames';
 import uuid from 'node-uuid';
 import Item from '../Item';
+import './ItemList.scss';
 
 class ItemList extends Component {
   static propTypes = {

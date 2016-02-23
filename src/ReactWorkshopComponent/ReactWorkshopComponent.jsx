@@ -1,6 +1,7 @@
 import React, { PropTypes, Component } from 'react';
 import SearchComponent from '../SearchComponent';
 import items from '../items';
+import './ReactWorkshopComponent.scss';
 
 class ReactWorkshopComponent extends Component {
   static propTypes = {

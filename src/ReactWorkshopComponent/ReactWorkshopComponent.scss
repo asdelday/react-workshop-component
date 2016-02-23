@@ -1,5 +1,10 @@
 @import '../variables.scss';
 
 .ReactWorkshopComponent {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
+  &__title {
+    text-align: center;
+    color: $primary-color;
+  }
 }
