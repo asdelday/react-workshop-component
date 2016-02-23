@@ -1,4 +1,6 @@
 import React, { PropTypes, Component } from 'react';
+import SearchComponent from '../SearchComponent';
+import items from '../items';
 
 class ReactWorkshopComponent extends Component {
   static propTypes = {
@@ -15,6 +17,10 @@ class ReactWorkshopComponent extends Component {
     return (
       <div className="ReactWorkshopComponent">
         { title && <h1 className="ReactWorkshopComponent__title">{ title }</h1> }
+        <SearchComponent className="ReactWorkshopComponent__searchComponent"
+                         placeholder="Type here..."
+                         filterableItems={ items }
+        />
       </div>
     );
   }
