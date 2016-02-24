@@ -1,21 +1,9 @@
 @import '../variables.scss';
 
-.Item {
-  display: flex;
-  flex-flow: row nowrap;
+.Tag {
+  text-align: center;
   padding: 10px;
-
-  &__image {
-    max-width: 40px;
-  }
-
-  &__info {
-    flex-grow: 1;
-    margin-left: 10px;
-  }
-
-  &__value {
-    color: $primary-color;
-    font-weight: 600;
-  }
+  border: solid 3px $primary-color;
+  color: $primary-color;
+  font-weight: 600;
 }

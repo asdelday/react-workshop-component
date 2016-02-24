@@ -8,6 +8,7 @@ class ItemList extends Component {
   static propTypes = {
     list: PropTypes.array,
     className: PropTypes.string,
+    onItemClick: PropTypes.func,
   };
 
   static defaultProps = {
@@ -15,11 +16,12 @@ class ItemList extends Component {
   };
 
   _renderList(list = []) {
+    const { onItemClick } = this.props;
     return list.map(item => {
       const key = `item-${uuid.v4()}`;
 
       return (
-        <Item className="ItemList__item" key={ key } item={ item } />
+        <Item className="ItemList__item" key={ key } onItemClick={ onItemClick } item={ item } />
       );
     });
   }

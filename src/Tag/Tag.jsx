@@ -1,8 +1,8 @@
 import React, { PropTypes, Component } from 'react';
 import cx from 'classnames';
-import './Item.scss';
+import './Tag.scss';
 
-class Item extends Component {
+class Tag extends Component {
   static propTypes = {
     item: PropTypes.object.isRequired,
     className: PropTypes.string,
@@ -15,18 +15,17 @@ class Item extends Component {
   render() {
     const { className, item } = this.props;
     if (!item) { return null;}
-    const { value, description, image } = item;
+    const { value, image } = item;
 
     return (
-      <div className={ cx(className, 'Item') }>
+      <div className={ cx(className, 'Tag') }>
         <img src={ image } alt={ value } />
-        <div className="Item__info">
-          <div className="Item__value">{ value }</div>
-          <div className="Item__description">{ description }</div>
+        <div className="Tag__info">
+          <div className="Tag__value">{ value }</div>
         </div>
       </div>
     );
   }
 }
 
-export default Item;
+export default Tag;
