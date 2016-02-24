@@ -1,0 +1,12 @@
+@import '../variables.scss';
+
+.ItemList {
+  $border: solid 1px #BBB;
+  border: $border;
+
+  &__item {
+    &:not(:last-child) {
+      border-bottom: $border;
+    }
+  }
+}
